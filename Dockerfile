@@ -1,6 +1,6 @@
 FROM zcx2001/nodebuilder:latest
 
-ENV PATH=/root/.nvm/versions/node/v16.20.0/bin/:$PATH
+ENV PATH=/opt/apache-maven-3.6.3/bin:$PATH
 
 ADD maven/apache-maven-3.6.3-bin.tar.gz /opt
 

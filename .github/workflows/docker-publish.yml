@@ -2,8 +2,7 @@ name: Docker Publish
 
 on:
   push:     
-    # tags: [ 'v*.*.*' ]
-    branch: [ 'main' ]
+    tags: [ 'v*.*.*' ]
 
 jobs:
   build:
@@ -27,6 +26,4 @@ jobs:
           push: true
           tags: |
             zcx2001/java8builder:latest
-
-
-#            zcx2001/java8builder:${{ github.ref_name }} 
+            zcx2001/java8builder:${{ github.ref_name }} 
